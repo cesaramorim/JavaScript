@@ -1,12 +1,12 @@
 import React from  'react'
-import { SafeAreaView } from 'react-native'
+import { SafeAreaView, StyleSheet } from 'react-native'
 
 import Primeiro from './components/Primeiro' 
 import Default, { Comp1, Comp2 } from './components/Multi' 
 
 
 export default () => (
-<SafeAreaView>
+<SafeAreaView style = {style.App}>
     <Default />
     <Comp1 />
     <Comp2 />
@@ -14,3 +14,11 @@ export default () => (
 
     <Primeiro />
 </SafeAreaView>)
+
+const style = StyleSheet.create({ 
+    App: {
+        flexGrow: 1,
+        justifyContent: "center",
+        alignItems: "center"
+    }
+})
