@@ -12,7 +12,6 @@
 			"        <Text style ={Estilo.txtG}>$1</Text>",
 			"    )",
 			"}",
-
 	 	],
 	 	"description": "Log output to console"
 	 }
