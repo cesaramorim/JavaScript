@@ -16,12 +16,15 @@ import ParImpar from './components/ParImpar'
 import Familia from './components/relacao/Familia'
 import Membro from './components/relacao/Membro'
 import IfUsuarioLogado from './components/IfUsuarioLogado'
+import ListaProdutos from './components/produtos/ListaProdutos'
+import ListaProdutosV2 from './components/produtos/ListaProdutosV2'
 
 export default () => (
 <SafeAreaView style = {style.App}>
+    <ListaProdutosV2 />
+    {/*<ListaProdutos />
     <IfUsuarioLogado usuario = {{nome: 'Gui', email: 'gui@gui.com'}}/>
-
-    {/*<Familia>
+    <Familia>
         <Membro nome = "Bia" sobrenome = "Arruda"></Membro>
         <Membro nome = "Bia" sobrenome = "Arruda"></Membro>
     </Familia>
@@ -29,7 +32,6 @@ export default () => (
         <Membro nome = "Ana" sobrenome = "Silvia"></Membro>
         <Membro nome = "Gui" sobrenome = "Silvia"></Membro>
     </Familia>
-
     <ParImpar num = {2}/>
     <DiferenciarAndroidIOS />
     <ContadorV2 />
